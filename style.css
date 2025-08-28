@@ -1,11 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .upper {
     width: 100%;
-    height: 580px;
+    height: 700px;
     background-color: black;
     /* background-image: url(./assets/PK-en-20250721-TRIFECTA-perspective_d6a54b31-953a-4373-929a-9de50f6c13fe_large.jpg); */
     /* background-repeat: no-repeat; */
@@ -14,28 +16,34 @@
 }
 
 .image {
-    height: 575px;
-    width: 1280px;
+    height: 600px;
+    width: 100%;
     position: absolute;
     z-index: -2;
     opacity: 50%;
 }
 
 .image img {
-    height: 585px;
-    width: 99%;
+    height: 600px;
+    width: 100%;
 }
 
 .logo {
+    width: 100%;
+    height: auto;
     color: red;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     justify-content: space-evenly;
     z-index: 4;
+    flex-wrap: wrap;
 }
+
 .logo h1 {
+    width: 50%;
+    height: auto;
     margin: 15px 45px;
     margin-left: -30px;
     font-size: 40px;
@@ -43,6 +51,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
+
 .logo button {
     width: 75px;
     padding: 9px;
@@ -51,62 +60,257 @@
     text-align: center;
     border-radius: 5px;
     border: none;
-    margin-left: 550px;
+    /* margin-left: 550px; */
     font-weight: 700;
 }
-.logo button:hover{
+
+.logo button:hover {
     cursor: pointer;
     background-color: rgb(237, 0, 0);
 }
+
 .subs {
     height: 150px;
-    /* width: 50px; */
+    width: 100%;
     color: white;
-    display: grid;
-    justify-content: center;
+    /* display: grid; */
+    /* justify-content: center; */
     text-align: center;
-    margin-top: 120px;
+    padding-top: 120px;
+    /* margin-top: 120px; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    flex-wrap: wrap;
+
 }
 
 .subs h1 {
     font-size: 50px;
     font-weight: bolder;
 }
+
 .subs h3 {
     margin-top: 10px;
 }
+
 .subs p {
     font-size: 14px;
     margin-top: 25px;
 }
+
 .inpbtn {
     /* background-color: blueviolet; */
-    height: 50px;
+    height: 340px;
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     padding: 10px;
-    gap: 10px;
-    margin-top: 60px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    /* margin-top: 60px; */
 }
+
 .inpbtn input {
     background-color: rgb(39, 39, 39);
     width: 28%;
+    height: 60px;
     border-radius: 5px;
     padding-left: 20px;
     border: white solid 1px;
     opacity: 87%;
     font-size: 15px;
     font-weight: bold;
+    flex-wrap: wrap;
 }
+
 .inpbtn button {
     width: 15%;
+    height: 60px;
     background-color: red;
     color: white;
     font-size: 20px;
     font-weight: 600;
     border-radius: 5px;
     border: none;
+    /* flex-wrap: wrap; */
 }
+
+.trending {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding: 90px;
+    flex-wrap: wrap;
+}
+
+.trending .heading {
+    height: 80px;
+}
+
+.movies {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.movie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    height: auto;
+    /* border: 1px;
+    border-radius: 20px; */
+    /* cursor: pointer; */
+    transition: transform .7s ease-in-out;
+    flex-wrap: wrap;
+
+}
+
+.movie:hover img {
+    transform: scale(1.2);
+}
+
+.cards {
+    background-color: black;
+    padding: 50px;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.heading {
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+.one {
+    width: 24%;
+    height: auto;
+    padding: 10px;
+    background: #821091;
+    background: linear-gradient(171deg, rgba(130, 16, 145, 1) 0%, rgba(125, 40, 80, 1) 61%, rgba(234, 62, 113, 1) 85%, rgba(252, 70, 107, 1) 100%);
+    border: 1px solid white;
+    border-radius: 20px;
+    opacity: 5;
+    color: white;
+    text-align: center;
+}
+
+.section {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.section p {
+    width: 100%;
+    height: auto;
+    font-size: larger;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.input {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.input input {
+    width: 400px;
+    height: 50px;
+    border: white;
+    border-radius: 5px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.button {
+    width: 130px;
+    height: 50px;
+    background-color: rgb(229, 9, 20);
+    border: none;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: black;
+    text-decoration: underline gray;
+    flex-wrap: wrap;
+}
+.data{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+}
+.lis{
+    width: 24%;
+    height: auto;
+    padding: 50px;
+    line-height: 2.0;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.last{
+    width: 100%;
+    height: 120px;
+    color: grey;
+    text-decoration: underline grey;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* @media (min-width: 960px) {
+    .default-ltr-iqcdef-cache-1f97ztc {
+        width: 150%;
+        left: -25%;
+    }
+}
+
+.default-ltr-iqcdef-cache-1f97ztc:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: -.25rem;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+} */
